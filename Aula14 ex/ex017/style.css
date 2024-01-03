@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal arial;
+    background: rgb(121, 121, 255);
+}
+
+header{
+    text-align: center;
+    font-size: large;
+    color: black;
+    margin-top: 2%;
+}
+
+section{
+    background: white;
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.242);
+    margin: auto;
+    margin-top: 2%;
+    padding: 3%;
+}
+
+section input{
+    display: flex;
+    margin: 2%;
+}
+#botao{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: 4%;
+}
+
+#resposta{
+    margin-top: 5%;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    margin-top: 2%;
+}
