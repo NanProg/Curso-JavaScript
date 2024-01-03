@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: cornflowerblue;
+}
+
+header{
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+}
+
+section{
+    background: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.397);
+    margin: auto;
+    margin-top: 2%; 
+    text-align: center;
+    padding-top: 2%;
+    font-family: Arial;
+    font-size: large;
+}
+section div{
+    padding: 2%;
+}
+
+footer{
+    text-align: center;
+    font-family: Arial;
+    font-size: large;
+    font-style: italic;
+    color: white;
+    margin-top: 3%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }        
+        
+        body{
+            color: white;
+            font-family: Arial;
+            font-size: 22pt;
+        }
+
+        .box{
+            background: rgb(85, 85, 255);
+            width: fit-content;
+            border-radius: 5px;
+            line-height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .box input{
+            margin: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+    </div>
+    <script>
+        function somar(){
+            var t1 = (document.getElementById('txtn1'))
+            var t2 = (document.getElementById('txtn2'))
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var soma = n1 + n2
+            document.write('A soma desses valores é igual a ' + soma)
+        }
+    </script>
+</body>
+</html>

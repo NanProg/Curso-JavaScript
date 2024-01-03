@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática001</title>
+    <style>
+        body{
+            background: rgb(233, 84, 84);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+
+        script{
+            background: white;
+            justify-content: center;
+            flex: content;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.alert('IMC | SOFTWARE')
+        var altura = Number(window.prompt('Digite sua altura (M)'))
+        var peso = Number(window.prompt('Digite seu peso (Kg)'))
+        var IMC = peso / altura**2
+        var IMCF = IMC.toFixed(2) //Formatar o float com o número de casas decimais que eu quero
+        var abaixo_do_normal = (IMC < 18.5)
+        var normal = (IMC > 18.6) && (IMC < 24.9)
+        var sobrepeso = (IMC > 25) && (IMC < 29.9)
+        var obesidade1 = (IMC > 30) && (IMC < 34.9)
+        var obesidade2 = (IMC > 35) && (IMC < 39.9)
+        var obesidade3 = (IMC > 40)
+        document.writeln(`IMC: ${IMCF}<br>`)
+        document.writeln(`Abaixo do peso: ${abaixo_do_normal}<br>`)
+        document.writeln(`Normal: ${normal}<br>`)
+        document.writeln(`Sobrepeso: ${sobrepeso}<br>`)
+        document.writeln(`Obesidade grau I: ${obesidade1}<br>`)
+        document.writeln(`Obesidade grau II: ${obesidade2}<br>`)
+        document.writeln(`Obesidade grau III: ${obesidade3}<br>`)
+    </script>
+</body>
+</html>

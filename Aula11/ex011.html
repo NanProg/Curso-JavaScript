@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nações</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: rgb(255, 255, 224);
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        .main{
+            background: white;
+            width: 500px;
+            height: 200px;
+            border: solid black 1px;
+            border-radius: 20px;
+            position: relative;
+            left: 28%;
+            margin-top: 5%;
+            padding-left: 5%;
+        }
+        .main h1{
+            margin-top: 5%;
+        }
+        .main input{
+            margin-top: 5%;
+        }
+
+        #resp{
+            background: white;
+            width: 500px;
+            height: 100px;
+            border: solid black 1px;
+            border-radius: 20px;
+            position: relative;
+            left: 28%;
+            margin-top: 5%;
+            padding-left: 5%;
+            display: flex;
+            align-items: center;
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Nações</h1>
+        <h2>Verificador de países</h2>
+        <input type="text" name="txtp" id="txtp">
+        <input type="button" value="Confirmar" onclick="confirmar()">
+    </div>
+    <div id="resp">
+        <p>A resposta será exibida aqui!</p>
+    </div>
+    <script>
+        function confirmar(){
+            var nacionalidade = document.querySelector('input#txtp')
+            var naciof = (nacionalidade.value)
+            var res = document.getElementById('resp')
+            if (naciof == 'brasileiro'){
+                res.innerHTML = 'Legal, um brasileiro, tu é muito maneiro. :D'
+            } else{
+                res.innerHTML = `Legal, você é um ${naciof}. :D`
+            }
+        }
+    </script>
+</body>
+</html>
