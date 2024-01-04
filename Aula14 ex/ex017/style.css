@@ -12,7 +12,7 @@ body{
 header{
     text-align: center;
     font-size: large;
-    color: black;
+    color: white;
     margin-top: 2%;
 }
 
@@ -46,4 +46,5 @@ footer{
     text-align: center;
     font-style: italic;
     margin-top: 2%;
+    color: white;
 }
