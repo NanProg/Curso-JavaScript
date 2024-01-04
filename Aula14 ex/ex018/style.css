@@ -12,7 +12,7 @@ body{
 header{
     text-align: center;
     font-size: large;
-    color: black;
+    color: white;
     margin-top: 2%;
 }
 
@@ -21,13 +21,20 @@ section{
     width: 500px;
     height: 400px;
     border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.242);
     margin: auto;
     margin-top: 2%;
-    text-align: center;
+    padding: 3%;
+}
+
+section input{
+    display: flex;
+    margin: 1.5%;
 }
 
 footer{
     text-align: center;
     font-style: italic;
+    color: white;
     margin-top: 2%;
 }
