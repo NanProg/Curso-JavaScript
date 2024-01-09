@@ -12,22 +12,35 @@ body{
 header{
     text-align: center;
     font-size: large;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-top: 2%;
 }
 
 section{
     background: white;
     width: 500px;
-    height: 400px;
+    height: fit-content;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.267);
     border-radius: 20px;
     margin: auto;
     margin-top: 2%;
-    text-align: center;
+    display: table;
+    padding: 2%;
 }
-
+div input{
+    margin: 1%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.442);
+    background: white;
+}
+#tabela{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100px;
+}
 footer{
     text-align: center;
     font-style: italic;
     margin-top: 2%;
+    color: white;
 }
