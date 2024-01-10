@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal arial 10pt;
+    background: rgb(121, 121, 255);
+}
+
+header{
+    text-align: center;
+    font-size: large;
+    color: white;
+    margin-top: 2%;
+}
+
+section{
+    background: white;
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 2%;
+    display: table;
+    padding: 3%;
+}
+section div,p{
+    margin: 5%;
+    padding-right: 25%;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    margin-top: 2%;
+    color: white;
+}
