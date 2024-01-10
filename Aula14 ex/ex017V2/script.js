@@ -6,21 +6,32 @@ let res = document.getElementById('resposta')
 function contar() {
     if (start.value.length == 0 || end.value.length == 0) {
         alert('Dados faltando!')
-    } else if (Number(start.value)<Number(end.value)) {
+    } else if (Number(start.value)<Number(end.value)) { //crescente
         if (Number(passo.value) == 0 || passo.value.length == 0) {
-            let vf = Number(start.value)
-            while (Number(start.value)<=Number(end.value)) {
-                vf++
-                res.innerHTML += `${vf}...`
+            res.innerHTML = ''
+            for (let c = Number(start.value);c<=Number(end.value);c++) {
+                res.innerHTML += `${c} \u{1F449}`
             }
         } else {
-            alert(`passo: ${Number(passo.value)}`)
+            res.innerHTML = ''
+            for (let c = Number(start.value);c<=Number(end.value);c+=Number(passo.value)) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
         }
-    } else if (Number(end.value)<Number(start.value)){
+    } else if (Number(start.value)>Number(end.value)) { //decrescente
         if (Number(passo.value) == 0 || passo.value.length == 0) {
-            alert('passo 0 será -1')
+            res.innerHTML = ''
+            for (let c = Number(start.value);c>=Number(end.value);c--) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
         } else {
-            alert(`passo: -${Number(passo.value)}`)
+            res.innerHTML = ''
+            for (let c = Number(start.value);c>=Number(end.value);c-=Number(passo.value)) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
         }
+    } else {
+        alert('Início e fim semelhantes...')
     }
+    res.innerHTML += '\u{1F3C1}'
 }
